@@ -1,30 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Innofy.mv – Coming Soon</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Innofy – Shaping Tomorrow, Today</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    :root {
+      --text-color: #ffffff;
+      --bg-color: #0d0d0d;
+      --accent: #00ffc3;
+    }
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #ffffff;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Poppins', sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
       flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    img.logo {
+      width: 120px;
+      margin-bottom: 20px;
     }
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: var(--text-color);
     }
-    p {
-      color: #bbb;
+    .tagline {
+      font-size: 1.2rem;
+      color: #bbbbbb;
+      margin-bottom: 40px;
+    }
+    .typewriter {
+      font-size: 1.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid var(--accent);
+      animation: typing 3s steps(30, end), blink 0.7s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .tagline { font-size: 1rem; }
+      .typewriter { font-size: 1.2rem; }
     }
   </style>
 </head>
 <body>
-  <h1>innofy.mv</h1>
-  <p>9789789</p>
+
+  <img src="https://innofy-github-io.pages.dev/assets/logo.png" alt="Innofy Logo" class="logo" />
+  <h1>INNOFY</h1>
+  <div class="tagline">Shaping Tomorrow, Today</div>
+  <div class="typewriter">> Something awesome is coming...</div>
+
 </body>
 </html>
